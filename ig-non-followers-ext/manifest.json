@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Instagram Follow-Back Checker",
+  "version": "1.0",
+  "description": "Finds people you follow who do not follow you back.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "*://*.instagram.com/*",
+    "*://*.cdninstagram.com/*",
+    "*://*.fbcdn.net/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Check Followers"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
